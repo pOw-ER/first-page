@@ -151,15 +151,15 @@ input.botton:hover {
 
 img {
     box-sizing: border-box;
-    width: 150px
+    
 }
 #footer {
     background-color: rgb(0, 124, 89);
     box-sizing: border-box;
-    height: 100px;
+    
 }
 .smedia {
-    font-size: 50px;
+    font-size: 40px;
     color: #f2f2f2;
 }
 
@@ -171,4 +171,5 @@ i {
 i:hover {
     color: #343A40;
 }
+
 
