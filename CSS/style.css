@@ -141,7 +141,7 @@ input.botton:hover {
 }
 
 .jumbotron {
-    background-image: url(../IMG/first.jpeg);
+    background-image: url(../img/first.jpeg);
     background-size: cover;
     height: 500px;
     background-position: center;
