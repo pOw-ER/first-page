@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>LOGIN</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -30,7 +30,6 @@
             color: #343A40;
         }
     </style>
-
 </head>
 
 <body>
@@ -62,58 +61,39 @@
                 <ul class="navbar-nav navbar-right">
 
                     <li>
-                        <a href="" class="nav-link active"><span class="glyphicon glyphicon-user"></span>Sign Up
+                        <a href="register.html" target="_blank" class="nav-link"><span
+                                class="glyphicon glyphicon-user"></span>Sign Up
                         </a>
                     </li>
                     <li>
-                        <a href="login.html" target="_blank" class="nav-link"><span
-                                class="glyphicon glyphicon-log-in"></span> Login
+                        <a href="" class="nav-link active"><span class="glyphicon glyphicon-log-in"></span> Login
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container" style="margin-top: 100px;">
-        <h1 style="text-align: center;"> Das Formular zur Anmeldung</h1>
-        <div style="margin-left: 25%; margin-right: 25%">
+    <div class="container" style="margin-top: 250px;">
+        <h1 class="text-center">LOGIN</h1>
+        <div style="margin-left: 25%; margin-right: 25%;">
             <form action="./" method="POST">
-                <input type="text" class="form-control paddings" name="firstname" autofocus placeholder="Vorname"
-                    required>
-                <input type="text" class="form-control paddings" name="surname" placeholder="Nachname" required>
-                <input type="date" class="form-control paddings" name="date" id="bdate" placeholder="Geburtsdatum"
-                    required>
-                <input type="email" class="form-control paddings" name="mail" placeholder="E-Mail" required>
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label px-2" for="male">Mann</label>
-                    <input class="form-check-input" type="radio" name="sex" id="male" value="male">
-                    <label class="form-check-label px-2" for="women">Frau</label>
-                    <input class="form-check-input" type="radio" name="sex" id="women" value="women">
-                </div>
-                <select name="country" class="form-control paddings" required>
-                    <option value="">--Land--</option>
-                    <option value="">Almanya</option>
-                    <option value="">Fransa</option>
-                    <option value="">Ingiltere</option>
-                    <option value="">Amerika</option>
-                    <option value="">Türkiye</option>
-                    <option value="">Hollanda</option>
-                    <option value="">Cin</option>
-                    <option value="">Rusya</option>
-                </select>
-                <input type="text" class="form-control paddings" name="town" placeholder="Stadt" required>
+                <input type="text" class="form-control paddings" name="benutzerName" placeholder="Benutzername"
+                    autofocus required>
                 <input type="password" class="form-control paddings" name="password" placeholder="Passwort" required>
-                <!--burda iki password esit olmadiginda uyarsin. -->
-                <input type="password" class="form-control paddings" name="repassword"
-                    placeholder="Passwort Wiederholen" required>
-                <button type="reset" class="form-control btn btn-info paddings">Leeren</button>
-                <button type="submit" class="form-control btn btn-info paddings">Senden</button>
-
-                <a href="./index.html" class="form-control btn btn-warning paddings">Home</a>
-
+                <a href="" class="pl-1">Haben Sie Ihr Passwort vergessen?</a>
+                <button type="submit" class="btn btn-info float-right">Anmelden</button>
             </form>
         </div>
+
     </div>
+
+
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
