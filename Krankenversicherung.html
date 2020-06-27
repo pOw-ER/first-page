@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Krankenversicherung</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -16,9 +16,9 @@
             margin: 0;
             box-sizing: border-box;
         }
-
-        .paddings {
-            margin: 5px 5px 5px 5px;
+        .section {
+            margin: 50px;
+            padding: 100px;
         }
 
         i {
@@ -58,7 +58,7 @@
                         <div class="dropdown">
                             <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">PRODUCTS</a>
                             <div class="dropdown-menu">
-                                <a href="./Krankenversicherung.html" class="dropdown-item">Krankenversicherung</a>
+                                <a href="./Krankenversicherung.html" class="dropdown-item active">Krankenversicherung</a>
                                 <a href="./Haftpflichtversicherung.html" class="dropdown-item">Haftpflichtversicherung</a>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                 <ul class="navbar-nav navbar-right">
 
                     <li>
-                        <a href="" target="_blank" class="nav-link active"><span><i class="fas fa-sign-in-alt"></i></span> Sign Up
+                        <a href="register.html" target="_blank" class="nav-link"><span><i class="fas fa-sign-in-alt"></i></span> Sign Up
                         </a>
                     </li>
                     <li>
@@ -84,47 +84,55 @@
             </div>
         </div>
     </nav>
-    <div class="container" style="margin-top: 100px; margin-bottom: 100px;">
-        <h1 style="text-align: center;"> Das Formular zur Anmeldung</h1>
-        <div style="margin-left: 25%; margin-right: 25%">
-            <form action="./" method="POST">
-                <input type="text" class="form-control paddings" name="firstname" autofocus placeholder="Vorname"
-                    required>
-                <input type="text" class="form-control paddings" name="surname" placeholder="Nachname" required>
-                <input type="date" class="form-control paddings" name="date" id="bdate" placeholder="Geburtsdatum"
-                    required>
-                <input type="email" class="form-control paddings" name="mail" placeholder="E-Mail" required>
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label px-2" for="male">Mann</label>
-                    <input class="form-check-input" type="radio" name="sex" id="male" value="male">
-                    <label class="form-check-label px-2" for="women">Frau</label>
-                    <input class="form-check-input" type="radio" name="sex" id="women" value="women">
+
+    <div class="section mx-auto">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card mt-3">
+                    <img src="./img/blue-and-silver-stetoscope-40568.jpg" alt="" class="img-responsive w-100">
+                        <div class="card-body py-3"><b>Kostonlose Zähnereinigung</b></div>
+                        <div class="card-footer"><a href="">Mehr Erfahren...</a></div>
                 </div>
-                <select name="country" class="form-control paddings" required>
-                    <option value="">--Land--</option>
-                    <option value="">Almanya</option>
-                    <option value="">Fransa</option>
-                    <option value="">Ingiltere</option>
-                    <option value="">Amerika</option>
-                    <option value="">Türkiye</option>
-                    <option value="">Hollanda</option>
-                    <option value="">Cin</option>
-                    <option value="">Rusya</option>
-                </select>
-                <input type="text" class="form-control paddings" name="town" placeholder="Stadt" required>
-                <input type="password" class="form-control paddings" name="password" placeholder="Passwort" required>
-                <!--burda iki password esit olmadiginda uyarsin. -->
-                <input type="password" class="form-control paddings" name="repassword"
-                    placeholder="Passwort Wiederholen" required>
-                <button type="reset" class="form-control btn btn-info paddings">Leeren</button>
-                <button type="submit" class="form-control btn btn-info paddings">Senden</button>
-
-                <a href="./index.html" class="form-control btn btn-warning paddings">Home</a>
-
-            </form>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mt-3">
+                    <img src="./img/blue-and-silver-stetoscope-40568.jpg" alt="" class="img-responsive w-100">
+                        <div class="card-body py-3"><b>An Krebs leindende Patienten</b></div>
+                        <div class="card-footer"><a href="">Mehr Erfahren...</a></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mt-3">
+                    <img src="./img/blue-and-silver-stetoscope-40568.jpg" alt="" class="img-responsive w-100">
+                        <div class="card-body py-3"><b>Alles gut auch beim Urlaub</b></div>
+                        <div class="card-footer"><a href="">Mehr Erfahren...</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-4">
+                <div class="card mt-3">
+                    <img src="./img/blue-and-silver-stetoscope-40568.jpg" alt="" class="img-responsive w-100">
+                        <div class="card-body py-3"><b>Kostonlose Zähnereinigung</b></div>
+                        <div class="card-footer"><a href="">Mehr Erfahren...</a></div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+                <div class="card">
+                    <img src="./img/blue-and-silver-stetoscope-40568.jpg" alt="" class="img-responsive w-100">
+                        <div class="card-body py-3"><b>An Krebs leindende Patienten</b></div>
+                        <div class="card-footer"><a href="">Mehr Erfahren...</a></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mt-3">
+                    <img src="./img/blue-and-silver-stetoscope-40568.jpg" alt="" class="img-responsive w-100">
+                        <div class="card-body py-3"><b>Alles gut auch beim Urlaub</b></div>
+                        <div class="card-footer"><a href="">Mehr Erfahren...</a></div>
+                </div>
+            </div>
         </div>
     </div>
-
     <footer id="footer" class="w-100 mb-0 p-0 bg-info">
         <div class="row">
             <div class="col-md-6 py-4 text-center">
@@ -159,6 +167,11 @@
 
 
 
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
@@ -169,5 +182,4 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 </body>
-
 </html>
